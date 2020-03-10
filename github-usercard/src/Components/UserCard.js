@@ -7,9 +7,9 @@ class UserCard extends Component{
       <Card>
         <CardImg src={this.props.main.avatar_url}/>
           <CardBody>
-            <CardTitle>Title</CardTitle>
-            <CardSubtitle>SubText</CardSubtitle>
-            <CardText>Text Text Text Text</CardText>
+    <CardTitle><p>{this.props.main.login}</p></CardTitle>
+            <CardSubtitle><p>{this.props.main.location}</p></CardSubtitle>
+    <CardText><p>Repos: <a href ={this.props.main.repos_url}> Repos</a></p></CardText>
             {/*maybe button or link here?*/}
           </CardBody>
       </Card>
