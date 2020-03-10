@@ -5,7 +5,7 @@ class UserCard extends Component{
   render() {
     return(
       <Card>
-        <CardImg/>
+        <CardImg src={this.props.main.avatar_url}/>
           <CardBody>
             <CardTitle>Title</CardTitle>
             <CardSubtitle>SubText</CardSubtitle>
