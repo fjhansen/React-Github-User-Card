@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios'
+import UserCard from './Components/UserCard'
 
 class App extends Component {
   constructor() {
@@ -25,7 +26,11 @@ class App extends Component {
 
   render(){
     return(
-      <div><h1>User Cards</h1></div>
+      <div>
+        <h1>User Cards</h1>
+        <UserCard/>
+      
+      </div>
     )
   }
 }
