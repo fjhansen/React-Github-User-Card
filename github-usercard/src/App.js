@@ -38,11 +38,15 @@ class App extends Component {
 
   render(){
     return(
-      <div>
-        <h1>User Cards</h1>
-        <UserCard main={this.state.main}/>
-        <FollowersCard followers={this.state.followers}/>
+      <div style={{width: '1600px', height: '900px', margin: 'auto', display: 'flex', justifyContent:'center', backgroundImage:'linear-gradient(to right top, #030d22, #172459, #4c338f, #9534bb, #ea00d9)'}}>
+        <h1 style={{textAlign:'center' , margin: '3% 2%', color: '#DA707F'}}>User Cards</h1>
+        <div style={{maxWidth:''}}>
+         <UserCard main={this.state.main}/> 
+        </div>
         
+        <div style={{width: '1500px', height: '900px', display:'flex', flexWrap:'wrap', margin: 'auto'}}>
+        <FollowersCard followers={this.state.followers}/>
+        </div>
       
       </div>
     )
